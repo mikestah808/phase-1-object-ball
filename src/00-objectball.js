@@ -1,5 +1,5 @@
 function gameObject(){
-    {
+  return   {
         homeObject: {
             teamName : "Brooklyn Nets",
             colors : ["Black", "White"],
@@ -35,3 +35,23 @@ function gameObject(){
 }
 
 console.log(gameObject());
+debugger
+
+function homeTeamName(){
+    let obj = gameObject()
+    return obj['home']['teamName']
+    
+}
+console.log(homeTeamName());
+
+function numPointsScored(inputPlayer){
+    let obj1 = gameObject()
+    for(let key1 in obj1){
+        let playerObj = obj1[key1];
+         console.log(playerObj);
+         
+        }
+    
+    }
+    numPointsScored("Anderson");
+debugger
